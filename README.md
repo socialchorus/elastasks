@@ -1,7 +1,7 @@
 <p align="center" style="text-align: center">
   <a href="https://elastasks.vercel.app/" style="text-align: center">
     <h3 align="center" style="font-weight: bold; text-align: center; font-size: 34px; margin-bottom: -45px">🔦</h3>
-    <h3 align="center" style="font-weight: bold; text-align: center; font-size: 34px; margin-bottom: -10px">elasTasks</h3>
+    <h3 align="center" style="font-weight: bold; text-align: center; font-size: 34px; margin-bottom: -10px">Tasky</h3>
   </a>
   <p align="center">The missing UI wrapper around selected parts of the <a href="https://www.elastic.co/guide/en/elasticsearch/reference/current/tasks.html" target="_blank">ElasticSearch Tasks API</a></p>
 </p>
@@ -9,6 +9,8 @@
 ---
 
 ![Demo](https://github.com/jzzfs/elastasks/blob/master/demo.gif)
+
+[Original Repo and Creator:](https://github.com/jzzfs/elastasks)
 
 ---
 
@@ -22,19 +24,18 @@ This application attempts to solve the problem detailed in the [unresolved Kiban
 
 On the web:
 
-1. Visit [elastasks.vercel.app](https://elastasks.vercel.app/)
+Locally using workstation:
 
-Locally:
+1. `sc start tasky`
 
-1. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github) this repository
-2. `cd app`
-3. `npm install && npm run start`
+2. When connecting to an ElasticSearch host you need to opt out of enabling [CorsAnywhere](https://github.com/Rob--W/cors-anywhere/) -- a NodeJS reverse proxy which adds CORS headers to the proxied request.  It's not needed to connect to Elasticsearch in AWS.
 
-## Privacy
+Without workstation:
 
-elasTasks is a client-side application with no server backend. Data lives only on your machine/browser. No information or ES data is sent to any server.
+1. `yarn install && yarn start`
+2. Browse to localhost:4200
 
-When connecting to an ElasticSearch host you may opt out of enabling [CorsAnywhere](https://github.com/Rob--W/cors-anywhere/) -- a NodeJS reverse proxy which adds CORS headers to the proxied request.
+[[images/tasky-ui.png]]
 
 ## Contributing
 
@@ -44,4 +45,5 @@ Pull requests are welcome.
 
 If this piece of software brought value to you/your organization,
 
+Can support the original developer here:
 <a href="https://www.buymeacoffee.com/joejoe" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png" alt="Buy Me A Coffee" width="150" ></a>

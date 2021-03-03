@@ -1,23 +1,19 @@
 <nz-layout class="app-layout">
   <nz-sider class="menu-sidebar"
             nzCollapsible
-            nzWidth="224px"
+            nzWidth="110px"
             nzBreakpoint="md"
             [(nzCollapsed)]="isCollapsed"
             [nzTrigger]="null">
     <div class="sidebar-logo">
       <a routerLink="/">
-        <h1>🔦&nbsp;elasTasks</h1>
+        <h1>Tasky</h1>
       </a>
     </div>
     <ul nz-menu
         nzTheme="light"
         nzMode="inline"
         [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu
-          nzOpen
-          nzTitle="Dashboard"
-          nzIcon="dashboard">
         <ul>
           <li nz-menu-item
               nzMatchRouter>
@@ -29,7 +25,6 @@
             <a routerLink="/tasks">Tasks</a>
           </li>
         </ul>
-      </li>
     </ul>
 
     <nz-alert *ngIf="currentHostName"
